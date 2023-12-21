@@ -1,7 +1,5 @@
 # SISTEM INFORMASI PERPUSTAKAAN SMA NEGERI 12 BANDAR LAMPUNG
 
-Satu atau dua paragraf menjelaskan tentang proyek Anda.
-
 ## Deskripsi
 
 Perpustakaan merupakan salah satu fasilitas penting yang wajib ada dalam sebuah lembaga pendidikan seperti SMA Negeri 12 Bandar Lampung.
@@ -25,8 +23,6 @@ Oleh karena itu, penting untuk memiliki sistem informasi perpustakaan yang efisi
 - Javascript
 
 ## Cara Instalasi
-
-Langkah-langkah untuk menginstalasi proyek ini. Misal:
 
 ```bash
 git clone https://github.com/kingjo04/Perpus_SMAN12_BandarLampung
