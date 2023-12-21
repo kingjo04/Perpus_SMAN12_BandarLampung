@@ -22,6 +22,9 @@ Oleh karena itu, penting untuk memiliki sistem informasi perpustakaan yang efisi
 - MYSQL
 - Javascript
 
+### Tampilan Website
+![Screenshot Aplikasi](Screenshot/Home.png)
+
 ## Cara Instalasi
 
 - Import projek ke komputer
@@ -38,5 +41,4 @@ cd Perpus_SMAN12_BandarLampung
 
 - Buka direktori projek di htdocs untuk menjalankan website di local
 
-### Tampilan Website
-![Screenshot Aplikasi](Screenshot/Home.png)
+
