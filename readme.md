@@ -34,11 +34,9 @@ git clone https://github.com/kingjo04/Perpus_SMAN12_BandarLampung
 cd Perpus_SMAN12_BandarLampung
 ```
 
-### Tampilan Website
-![Screenshot Aplikasi](screenshot/2023-12-21 (1).png)
-
-
 - Start XAMPP
 
 - Buka direktori projek di htdocs untuk menjalankan website di local
 
+### Tampilan Website
+![Screenshot Aplikasi](Screenshot/2023-12-21 (1).png)
