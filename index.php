@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistem informasi perpustakaan SMA Negeri 12 Bandar Lampung</title>
-    <link rel="icon" href="./admin/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <!-- Include Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <style>
@@ -146,8 +146,8 @@
     <header class="custom-header" style="box-shadow: 0px 12px 4px rgba(0, 0, 0, 0.25); background-color: #9EDDFF;">
         <nav class="navbar navbar-expand-lg navbar-light">
             <!-- Navbar content goes here -->
-            <a class="navbar-brand" href="index.php" style="display: flexbox; margin-left: 11%; scale: 0.7;">
-                <img src="admin/assets/dashboard/logo.png" alt="logo" class="logosma">
+            <a class="navbar-brand" href="#" style="display: flexbox; margin-left: 11%; scale: 0.7;">
+                <img src="assets/dashboard/logo.png" alt="logo" class="logosma">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -177,18 +177,18 @@
                     12</span><br>Bandar Lampung</h2>
         </div>
         <div class="gambarbuku-container">
-            <img src="admin/assets/global/buku.png" alt="buku" class="img-fluid gambarbuku">
+            <img src="assets/global/buku.png" alt="buku" class="img-fluid gambarbuku">
         </div>
     </div>
 
-   <form class="container mt-4" id="caribukuform" action="hasilcari.php" method="get">
-    <div class="input-group">
-        <input type="search" name="search" id="search" class="form-control" placeholder="Cari bukumu">
-        <button class="btn btn-primary search-icon" type="submit">
-            <i class="fas fa-search"></i> <!-- Bootstrap search icon -->
-        </button>
-    </div>
-</form>
+    <form class="container mt-4" id="caribukuform">
+        <div class="input-group">
+            <input type="search" name="search" id="search" class="form-control" placeholder="Cari bukumu">
+            <button class="btn btn-primary search-icon" type="button">
+                <i class="fas fa-search"></i> <!-- Bootstrap search icon -->
+            </button>
+        </div>
+    </form>
 
     <!-- Include Bootstrap JS and Popper.js -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>

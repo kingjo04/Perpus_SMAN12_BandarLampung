@@ -1,0 +1,67 @@
+<?php
+
+session_start();
+
+// Cek jika pengguna tidak login atau bukan admin
+if (!isset($_SESSION['username']) || $_SESSION['role'] != 'admin') {
+    header('Location: login.php');
+    exit();
+}
+
+include 'config.php';
+
+// Check if the form is submitted
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Assuming the form sends the data using POST method
+
+    $username = mysqli_real_escape_string($conn, $_SESSION['username']);
+
+    // Sanitizing and retrieving data from the POST request
+    $newPassword = mysqli_real_escape_string($conn, $_POST['password']);
+    $nama = mysqli_real_escape_string($conn, $_POST['nama']);
+    $email = mysqli_real_escape_string($conn, $_POST['email']);
+    // Add other fields as needed
+
+    // Assuming that the user uploads a new profile picture
+    if (isset($_FILES['profile_picture']) && $_FILES['profile_picture']['error'] == 0) {
+        // Define the upload directory
+        $uploadDir = 'uploads/';
+
+        // Retrieve file details
+        $fileTmpPath = $_FILES['profile_picture']['tmp_name'];
+        $fileName = $_FILES['profile_picture']['name'];
+        $fileSize = $_FILES['profile_picture']['size'];
+        $fileType = $_FILES['profile_picture']['type'];
+        $fileNameCmps = explode(".", $fileName);
+        $fileExtension = strtolower(end($fileNameCmps));
+
+        // Sanitize the file name
+        $newFileName = md5(time() . $fileName) . '.' . $fileExtension;
+
+        // Specify the path where the file is to be stored
+        $dest_path = $uploadDir . $newFileName;
+
+        // Move the file from the temporary directory to the desired location
+        if(move_uploaded_file($fileTmpPath, $dest_path)) {
+            // File is successfully uploaded
+        } else {
+            // Handle error scenario
+            echo "There was an error uploading the file";
+            exit;
+        }
+    } else {
+        // If no new file is uploaded, use the old file name
+        $newFileName = mysqli_real_escape_string($conn, $_POST['old_profile_picture']);
+    }
+
+    // Update the user's profile in the admin table
+    $query = "UPDATE admin SET password = '$newPassword', nama = '$nama', email = '$email', profile_picture = '$newFileName' WHERE username = '$username'";
+
+    if (mysqli_query($conn, $query)) {
+        echo "Profile updated successfully.";
+        // Redirect or further processing
+    } else {
+        echo "Error updating profile: " . mysqli_error($conn);
+    }
+}
+?>
