@@ -39,4 +39,4 @@ cd Perpus_SMAN12_BandarLampung
 - Buka direktori projek di htdocs untuk menjalankan website di local
 
 ### Tampilan Website
-![Screenshot Aplikasi](Screenshot/2023-12-21 (1).png)
+![Screenshot Aplikasi](Screenshot/Home.png)
