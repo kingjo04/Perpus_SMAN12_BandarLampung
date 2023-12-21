@@ -26,5 +26,7 @@ Oleh karena itu, penting untuk memiliki sistem informasi perpustakaan yang efisi
 
 ```bash
 git clone https://github.com/kingjo04/Perpus_SMAN12_BandarLampung
+```bash
+
 cd Perpus_SMAN12_BandarLampung
 
