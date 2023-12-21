@@ -38,7 +38,5 @@ cd Perpus_SMAN12_BandarLampung
 ```
 
 - Start XAMPP
-
+- Import database sql ke localhost/phpmyadmin
 - Buka direktori projek di htdocs untuk menjalankan website di local
-
-
