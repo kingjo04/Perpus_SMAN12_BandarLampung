@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600&display=swap");
+
+:root {
+  --babyblue: #9eddff;
+  --blue: #6499e9;
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 1);
+}
+* {
+  font-family: "poppins";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  
+  transition: all 0.2s linear;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 10%;
+  background: var(--babyblue);
+  box-shadow: var(--box-shadow);
+}
+.header .navbar {
+  margin-right: 0;
+  margin-left: 65rem;
+}
+.header .navbar a {
+  font-size: 1.7rem;
+  margin: 0 1rem;
+  color: white;
+}
+.header .navbar a:hover {
+  color: var(--blue);
+}
+.header .icons div {
+  /* height: 4.5rem; */
+  width: 4.5rem;
+  line-height: 4.5rem;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 2rem;
+  margin-right: 0.3rem;
+  text-align: center;
+}
+.header .icons div:hover {
+  background: var(--blue);
+}
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--blue);
+  background-position: center;
+  background-size: cover;
+  padding-top: 12rem;
+  padding-bottom: 2rem;
+}
+.home .content {
+  margin-right: 25rem;
+  margin-left: 5rem;
+}
+.imghome {
+  margin-left: 5rem;
+  margin-right: 0;
+}
+.content h3 {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+.imghome img {
+  height: 250px;
+  width: auto;
+}
+.sosmed {
+  font-size: 18px;
+  font-family: "poppins";
+}
+.biodata {
+  margin: 0 auto;
+  margin-top: 50px;
+  background-color: var(--babyblue);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 1000px;
+  text-align: center;
+}
+
+.cardbio {
+  margin: 0 auto;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 360px;
+  background-color: rgba(200, 200, 200, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  display: none; /* Initially hidden */
+}
+
+.form-group {
+  margin: 10px 0;
+  text-align: left;
+  position: relative;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+}
+
+.form-label {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-right: 10px;
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  font-size: 14px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style untuk input yang hanya memiliki border bawah */
+.form-control.mb-1 {
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Menerapkan margin kanan pada elemen label */
+.form-label {
+  margin-right: 10px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--babyblue);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* icons */
+.dropdownicons {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownicons a {
+  margin: 0;
+}
+
+.dropdown-contenticons {
+  display: none;
+  position: absolute;
+  background-color: var(--babyblue);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.dropdown-contenticons a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  background-color: #3498db; /* Initial background color */
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-contenticons a:hover {
+  background-color: #9eddff; /* New background color on hover */
+}
+
+.dropdownicons:hover .dropdown-contenticons {
+  display: block;
+  text-align: center;
+}

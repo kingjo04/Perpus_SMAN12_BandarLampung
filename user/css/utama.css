@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600&display=swap");
+
+:root {
+  --babyblue: #9eddff;
+  --blue: #6499e9;
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 1);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 10%;
+  background: var(--babyblue);
+  box-shadow: var(--box-shadow);
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+}
+header .navbar {
+  margin-right: 0;
+  margin-left: 2rem;
+}
+header .navbar a {
+  font-size: 1.1rem;
+  margin: 0 1rem;
+  color: white;
+}
+header .navbar a:hover {
+  color: var(--blue);
+}
+
+.hero {
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  background: var(--blue);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+}
+
+form {
+  margin-top: 20px;
+  max-width: 400px;
+  width: 100%;
+  margin-right: auto;
+}
+form .form-input {
+  display: flex;
+  align-items: center;
+  height: 36px;
+}
+form .form-input input {
+  flex-grow: 1;
+  padding: 0 16px;
+  height: 100%;
+  border: none;
+  background: white;
+  border-radius: 36px 0 0 36px;
+  outline: none;
+}
+form .form-input button {
+  width: 36px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  color: var(--blue);
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-radius: 0 36px 36px 0;
+  cursor: pointer;
+}
+
+section {
+  padding: 0 15%;
+}
+.hero-text h3 {
+  font-size: 20px;
+  color: white;
+  margin: 0 0 15px;
+}
+.hero-text span {
+  font-size: 40px;
+  color: yellow;
+}
+.hero-text h2 {
+  color: white;
+  font-size: 40px;
+}
+.hero-img img {
+  margin-top: 80px;
+  height: 450px;
+  width: auto;
+}
+.hero-text {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 1000px;
+  margin-right: 70px;
+}
+
+.hero-img {
+  text-align: center;
+  margin: 30px auto;
+  margin-left: 50px;
+}
