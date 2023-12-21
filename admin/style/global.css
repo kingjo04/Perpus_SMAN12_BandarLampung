@@ -1,0 +1,137 @@
+.container-fluid {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background-color: #9eddff;
+  z-index: 2;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.sidebar-content {
+  text-align: center;
+  margin-top: 10%;
+}
+
+.sidebar img {
+  max-width: 80%;
+  margin-bottom: 10px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 250px;
+  height: 60px;
+  background-color: #9eddff;
+  box-shadow: 0px 12px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.halamansaatini {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  margin-right: auto;
+}
+
+.content-container {
+  margin-top: 60px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.content {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.navigation-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.navigation-box:hover {
+  background-color: blue;
+}
+
+.navigation-box img {
+  max-width: 30%;
+  margin-right: 10px;
+}
+
+.navigation-box p {
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.popup-container {
+  position: absolute;
+  top: 12%;
+  left: 96%;
+  display: none;
+}
+
+.popup-content button {
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #9eddff;
+  border: none;
+  border-radius: 8px;
+  position: absolute;
+  left: 980px;
+  font-family: arial;
+  font-weight: bold;
+  color: white;
+  left: 50%;
+  /* Posisi di tengah */
+  transform: translateX(-50%);
+  /* Agar tepat di tengah */
+}
+
+.panah.bawah {
+  position: absolute;
+  right: 20px;
+  /* Sesuaikan dengan posisi yang diinginkan */
+  cursor: pointer;
+}
+
+.logo-image {
+  cursor: pointer;
+  /* Set the cursor style for the logo */
+}
+
+.navigation-box.active {
+  background-color: blue;
+  /* Ganti warna sesuai keinginan Anda */
+  color: white;
+}
