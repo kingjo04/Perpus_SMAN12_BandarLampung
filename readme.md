@@ -24,6 +24,8 @@ Oleh karena itu, penting untuk memiliki sistem informasi perpustakaan yang efisi
 
 ## Cara Instalasi
 
+- Import projek ke komputer
+  
 ```bash
 git clone https://github.com/kingjo04/Perpus_SMAN12_BandarLampung
 ```
@@ -32,7 +34,7 @@ git clone https://github.com/kingjo04/Perpus_SMAN12_BandarLampung
 cd Perpus_SMAN12_BandarLampung
 ```
 
-Start XAMPP
+- Start XAMPP
 
-Buka direktori projek di htdocs untuk menjalankan website di local
+- Buka direktori projek di htdocs untuk menjalankan website di local
 
